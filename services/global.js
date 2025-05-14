@@ -32,18 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const savedMode = localStorage.getItem("mode");
-if (savedMode === "dark") {
-  document.body.classList.add("dark-mode");
-  modeIcon.src = base + "assets/imgs/DarkMode.png";
-  updateIcons();
-} else {
-  document.body.classList.remove("dark-mode");
-  modeIcon.src = base + "assets/imgs/LightMode.png";
-  updateIcons();
-}
-
-
-  window.addEventListener("load", updateIcons);
+  if (savedMode === "dark") {
+    document.body.classList.add("dark-mode");
+    modeIcon.src = base + "assets/imgs/DarkMode.png";
+    updateIcons(); 
+  } else {
+    document.body.classList.remove("dark-mode");
+    modeIcon.src = base + "assets/imgs/LightMode.png";
+    updateIcons(); 
+  }
 
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
