@@ -4,20 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const navList = document.querySelector(".nav-list");
 
-  const base = "https://iviatan.github.io/HomeAssignmenttwo/";
-
   const icons = {
     email: {
-      light: base + "assets/imgs/email.png",
-      dark: base + "assets/imgs/emailcolor.png"
+      light: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/email.png",
+      dark: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/emailcolor.png"
     },
     github: {
-      light: base + "assets/imgs/github.png",
-      dark: base + "assets/imgs/githubcolor.png"
+      light: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/github.png",
+      dark: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/githubcolor.png"
     },
     linkedin: {
-      light: base + "assets/imgs/linkedin.png",
-      dark: base + "assets/imgs/linkedincolor.png"
+      light: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/linkedin.png",
+      dark: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/linkedincolor.png"
     }
   };
 
@@ -34,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedMode = localStorage.getItem("mode");
   if (savedMode === "dark") {
     document.body.classList.add("dark-mode");
-    modeIcon.src = base + "assets/imgs/DarkMode.png";
-    updateIcons(); 
+    modeIcon.src = "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/DarkMode.png";
+    updateIcons();
   } else {
     document.body.classList.remove("dark-mode");
-    modeIcon.src = base + "assets/imgs/LightMode.png";
-    updateIcons(); 
+    modeIcon.src = "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/LightMode.png";
+    updateIcons();
   }
 
   toggleBtn.addEventListener("click", () => {
@@ -47,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const isDark = document.body.classList.contains("dark-mode");
     localStorage.setItem("mode", isDark ? "dark" : "light");
     modeIcon.src = isDark
-      ? base + "assets/imgs/DarkMode.png"
-      : base + "assets/imgs/LightMode.png";
+      ? "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/DarkMode.png"
+      : "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/LightMode.png";
     updateIcons();
   });
 
