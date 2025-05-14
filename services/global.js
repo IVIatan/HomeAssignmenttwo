@@ -9,19 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
     : "/";
 
   const icons = {
-    email: {
-      light: basePath + "assets/imgs/email.png",
-      dark: basePath + "assets/imgs/emailcolor.png"
-    },
-    github: {
-      light: basePath + "assets/imgs/github.png",
-      dark: basePath + "assets/imgs/githubcolor.png"
-    },
-    linkedin: {
-      light: basePath + "assets/imgs/linkedin.png",
-      dark: basePath + "assets/imgs/linkedincolor.png"
-    }
-  };
+  email: {
+    light: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/email.png",
+    dark: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/emailcolor.png"
+  },
+  github: {
+    light: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/github.png",
+    dark: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/githubcolor.png"
+  },
+  linkedin: {
+    light: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/linkedin.png",
+    dark: "https://iviatan.github.io/HomeAssignmenttwo/assets/imgs/linkedincolor.png"
+  }
+};
+
 
   function updateIcons() {
     const isDark = document.body.classList.contains("dark-mode");
