@@ -4,18 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const navList = document.querySelector(".nav-list");
 
+  const basePath = window.location.pathname.includes("HomeAssignmenttwo")
+    ? "/HomeAssignmenttwo/"
+    : "/";
+
   const icons = {
     email: {
-      light: "assets/imgs/email.png",
-      dark: "assets/imgs/emailcolor.png"
+      light: basePath + "assets/imgs/email.png",
+      dark: basePath + "assets/imgs/emailcolor.png"
     },
     github: {
-      light: "assets/imgs/github.png",
-      dark: "assets/imgs/githubcolor.png"
+      light: basePath + "assets/imgs/github.png",
+      dark: basePath + "assets/imgs/githubcolor.png"
     },
     linkedin: {
-      light: "assets/imgs/linkedin.png",
-      dark: "assets/imgs/linkedincolor.png"
+      light: basePath + "assets/imgs/linkedin.png",
+      dark: basePath + "assets/imgs/linkedincolor.png"
     }
   };
 
@@ -32,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedMode = localStorage.getItem("mode");
   if (savedMode === "dark") {
     document.body.classList.add("dark-mode");
-    modeIcon.src = "assets/imgs/DarkMode.png";
+    modeIcon.src = basePath + "assets/imgs/DarkMode.png";
   } else {
     document.body.classList.remove("dark-mode");
-    modeIcon.src = "assets/imgs/LightMode.png";
+    modeIcon.src = basePath + "assets/imgs/LightMode.png";
   }
 
   window.addEventListener("load", updateIcons);
@@ -45,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const isDark = document.body.classList.contains("dark-mode");
     localStorage.setItem("mode", isDark ? "dark" : "light");
     modeIcon.src = isDark
-      ? "assets/imgs/DarkMode.png"
-      : "assets/imgs/LightMode.png";
+      ? basePath + "assets/imgs/DarkMode.png"
+      : basePath + "assets/imgs/LightMode.png";
     updateIcons();
   });
 
