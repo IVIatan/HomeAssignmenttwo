@@ -170,16 +170,6 @@ body {
   transform: scale(1.2);
 }
 
-body.dark-mode .contact-icons img[data-icon="email"] {
-  content: url("assets/imgs/emailcolor.png");
-}
-body.dark-mode .contact-icons img[data-icon="github"] {
-  content: url("assets/imgs/githubcolor.png");
-}
-body.dark-mode .contact-icons img[data-icon="linkedin"] {
-  content: url("assets/imgs/linkedincolor.png");
-}
-
 @media (max-width: 767px) {
   .container-fixed.hero-wrapper {
     flex-direction: column;
