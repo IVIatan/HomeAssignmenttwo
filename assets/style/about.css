@@ -1,0 +1,103 @@
+@import url('./variables.css');
+
+.about-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--container-color);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  width: 260px;
+  height: 265px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  background-color: var(--white);
+}
+
+.about-inner-box {
+  background-color: var(--box-inner-light, #fdf6e3);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  flex: 1;
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .about-inner-box {
+  background-color: var(--box-inner-dark, #2a2a2a);
+  color: var(--text-dark);
+}
+
+.about-inner-box h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.about-inner-box h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease;
+}
+
+.about-row:hover h2::after {
+  width: 100%;
+}
+
+.about-inner-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-inner-box {
+    padding: 20px;
+  }
+
+  .about-inner-box h2 {
+    font-size: 20px;
+  }
+
+  .about-inner-box p {
+    font-size: 14px;
+  }
+}
+body.dark-mode .about-inner-box h2::after {
+  background-color: rgba(255, 255, 255, 0.6); /* קו בהיר */
+}

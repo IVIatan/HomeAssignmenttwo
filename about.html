@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matan Leibzirer - ABOUT</title>
+
+  <link rel="stylesheet" href="assets/style/variables.css" />
+  <link rel="stylesheet" href="assets/style/home.css" />
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <link rel="stylesheet" href="assets/style/about.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="darkModeToggle" class="btn-mode">
+          <img id="modeIcon" src="assets/imgs/LightMode.png" alt="Toggle Mode" />
+        </button>
+        <div class="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about-wrapper">
+      <div class="about-row">
+        <img src="assets/imgs/NofHagalil.png" alt="NofHagalil" class="about-image" />
+        <div class="about-inner-box">
+          <h2>Personal Background</h2>
+          <p>
+            I grew up in Nof Hagalil and currently live in the student dorms at Ruppin Academic Center.  
+            I've always been drawn to new challenges and opportunities to grow — whether it's through studies, personal experiences, or the people I meet along the way.  
+            Living independently taught me a lot about myself and pushed me to take responsibility, stay curious, and keep evolving.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-row">
+        <img src="assets/imgs/Ruppin.jpg" alt="RuppinCampusLogo" class="about-image" />
+        <div class="about-inner-box">
+          <h2>Education</h2>
+          <p>
+            I'm currently studying Business Management and Information Systems at Ruppin Academic Center.  
+            This academic track has allowed me to build strong analytical and organizational skills while gaining hands-on experience with digital systems and technologies.  
+            It has deepened my understanding of how data, processes, and strategy come together to create effective business solutions.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-row">
+        <img src="assets/imgs/KARATE.jpg" alt="Karate" class="about-image" />
+        <div class="about-inner-box">
+          <h2>Hobbies</h2>
+          <p>
+            In my free time, I enjoy playing the piano and practicing karate — I've earned a black belt after years of dedication.  
+            I'm passionate about animals and spend time volunteering at shelters. My dog Joy has been with me for over 12 years and is a big part of my life.  
+            Lately, I've been dreaming of learning how to surf — something about the ocean really draws me in.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-row">
+        <img src="assets/imgs/challenge.jpg" alt="Values" class="about-image" />
+        <div class="about-inner-box">
+          <h2>Personal Values</h2>
+          <p>
+            I value authenticity, curiosity, and kindness.  
+            I believe in approaching challenges with commitment, learning from setbacks, and supporting the people around me.  
+            For me, personal and professional growth come from staying true to myself while always being open to new perspectives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Matan Leibzirer. All rights reserved.</p>
+  </footer>
+
+  <script src="services/global.js"></script>
 </body>
 </html>

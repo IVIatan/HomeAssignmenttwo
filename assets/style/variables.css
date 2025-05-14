@@ -1,4 +1,27 @@
-/* variables.css */
 :root {
-  --primary-color: #ffffff;
+  --primary-color: #0f0101;
+  --primary-color-dark: rgb(124, 108, 16);
+  --secondary-color: #D5C7A3;
+
+  --background-color: #FAF9F6;
+  --container-color: #FFF7E6;
+  --container-outer: transparent;
+
+  --text-dark: #1a1a1a;
+  --text-muted: #555555;
+  --white: #ffffff;
+
+  --font-main: 'Segoe UI', sans-serif;
+  --font-size-base: 16px;
+
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode {
+  --background-color: #1a1c20;
+  --text-dark: #e2e8f0;
+  --text-muted: #94a3b8;
+  --secondary-color: #1e293b;
+  --container-color: #334155;
+  --white: #f4f4f4;
 }

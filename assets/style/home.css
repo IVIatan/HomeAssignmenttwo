@@ -1,0 +1,230 @@
+@import url('./variables.css');
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: var(--secondary-color);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.nav-list a.active {
+  border-bottom: 2px solid yellow;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-mode img {
+  width: 28px;
+  height: 28px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hero {
+  background-color: var(--background-color);
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1000px;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.container-fixed.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box-left {
+  background-color: var(--container-color);
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: var(--shadow);
+}
+
+.box-left h2 {
+  font-family: var(--font-main);
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.box-left h1 {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.box-left p {
+  font-family: var(--font-main);
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.project-box-left {
+  text-align: center;
+}
+
+.project-box-left .project-img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  margin-bottom: -28px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.click-btn {
+  margin-top: -10px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.click-btn:hover {
+  transform: scale(1.1);
+}
+
+.box-right {
+  background-color: var(--container-color);
+  padding: 40px 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.logo-image {
+  width: 180px;
+  margin-bottom: -60px;
+}
+
+.hero-image {
+  max-width: 400px;
+  border-radius: 12px;
+  margin-top: 100px;
+  margin-bottom: 12px;
+}
+
+.resume-box,
+.contact-box {
+  margin-top: 24px;
+}
+
+.resume-title,
+.contact-title {
+  font-family: var(--font-main);
+  font-size: 22px;
+  color: #974B4B;
+  margin-bottom: 10px;
+}
+
+.resume-icons img,
+.contact-icons img {
+  width: 36px;
+  height: 36px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons img:hover,
+.resume-icons img:hover {
+  transform: scale(1.2);
+}
+
+body.dark-mode .contact-icons img[data-icon="email"] {
+  content: url("assets/imgs/emailcolor.png");
+}
+body.dark-mode .contact-icons img[data-icon="github"] {
+  content: url("assets/imgs/githubcolor.png");
+}
+body.dark-mode .contact-icons img[data-icon="linkedin"] {
+  content: url("assets/imgs/linkedincolor.png");
+}
+
+@media (max-width: 767px) {
+  .container-fixed.hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-left, .box-right {
+    max-width: 90%;
+  }
+
+  .box-left h1 {
+    font-size: 28px;
+  }
+
+  .box-left h2 {
+    font-size: 20px;
+  }
+
+  .box-left p {
+    font-size: 14px;
+  }
+
+  .click-btn {
+    width: 150px;
+  }
+
+  .hero-image {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-wrapper {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .box-left, .box-right {
+    max-width: 46%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box-left, .box-right {
+    max-width: 500px;
+  }
+}

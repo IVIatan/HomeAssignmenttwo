@@ -3,11 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Quote Calculator</title>
+  <title>Project Calculator</title>
+
+  <link rel="stylesheet" href="assets/style/variables.css" />
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <link rel="stylesheet" href="assets/style/calcualtor.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html" class="active">Project Calculator</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="darkModeToggle" class="btn-mode">
+          <img id="modeIcon" src="assets/imgs/LightMode.png" alt="Toggle Mode" />
+        </button>
+        <div class="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <h1>Website Project Price Calculator</h1>
+      <form id="priceForm">
+        <div class="form-group">
+          <label for="siteType">Choose Site Type:</label>
+          <select name="siteType" id="siteType">
+            <option value="business">Business Website</option>
+            <option value="store">Online Store</option>
+            <option value="blog">Blog</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pages">Number of Pages:</label>
+          <input type="number" name="pages" id="pages" min="1" max="10" required />
+        </div>
+
+        <div class="form-group">
+          <label>Custom Design Needed?</label>
+          <div class="checkbox-options">
+            <label><input type="checkbox" name="design" value="yes" /> Yes</label>
+            <label><input type="checkbox" name="design" value="no" /> No</label>
+          </div>
+        </div>
+
+        <div class="form-buttons">
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Calculate Price" />
+        </div>
+      </form>
+
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Matan Leibzirer. All rights reserved.</p>
+  </footer>
+
+  <script src="services/global.js"></script>
+  <script src="services/calculator.js"></script>
 </body>
 </html>

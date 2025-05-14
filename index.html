@@ -3,11 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Matan Leibzirer - WEBSITE</title>
+
+  <link rel="stylesheet" href="assets/style/variables.css" />
+  <link rel="stylesheet" href="assets/style/home.css" />
+  <link rel="stylesheet" href="assets/style/global.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button id="darkModeToggle" class="btn-mode">
+          <img id="modeIcon" src="assets/imgs/LightMode.png" alt="Toggle Mode" />
+        </button>
+        <div class="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container-fixed hero-wrapper">
+        <div class="box-left">
+          <h2>Hi, My name is</h2>
+          <h1>Matan Leibzirer</h1>
+          <p>
+            and I am a student of Information Systems and Business Management at the Ruppin Academic Center.<br />
+            I built my first HTML website about the red panda, combining creativity and HTML code.<br />
+            Down below, you can see a preview of the homepage. Click the button to visit the full website and explore it yourself!
+          </p>
+          <div class="project-box-left">
+            <img class="project-img" src="assets/imgs/WebSite.png" alt="Website Project" />
+            <a href="https://iviatan.github.io/RedPanda_Matan/matala1-lehagsha.html" target="_blank">
+              <img class="click-btn" src="assets/imgs/clickHERE.png" alt="Click to View Site" />
+            </a>
+          </div>
+        </div>
+
+        <div class="box-right">
+          <img class="logo-image" src="assets/imgs/Matanlogo.png" alt="Logo">
+          <img class="hero-image" src="assets/imgs/myPHOTO2.png" alt="Profile Image">
+
+          <div class="resume-box">
+            <img class="resume-title" src="assets/imgs/MyResume.png" alt="My Resume Title" />
+            <div class="resume-icons">
+              <a href="assets/resume.pdf" target="_blank">
+                <img src="assets/imgs/professionalportfolio.png" alt="Portfolio Icon" />
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <img class="contact-title" src="assets/imgs/CONTACTME2.png" alt="Contact Me Title" />
+            <div class="contact-icons">
+              <a href="mailto:matan01010108@gmail.com" target="_blank">
+                <img src="assets/imgs/email.png" alt="Email Icon" data-icon="email" />
+              </a>
+              <a href="https://github.com/IVIatan" target="_blank">
+                <img src="assets/imgs/github.png" alt="GitHub Icon" data-icon="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/matan-l-4a3b53274/" target="_blank">
+                <img src="assets/imgs/linkedin.png" alt="LinkedIn Icon" data-icon="linkedin" />
+              </a>
+              <a href="tel:0558863362">
+                <img src="assets/imgs/PHONEnew.png" alt="Phone-Icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Matan Leibzirer. All rights reserved.</p>
+  </footer>
+
+  <script src="services/global.js"></script>
 </body>
 </html>
