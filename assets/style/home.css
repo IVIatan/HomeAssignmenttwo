@@ -178,7 +178,8 @@ body {
   }
 
   .box-left, .box-right {
-    max-width: 90%;
+    max-width: 95%;
+    margin: 0 auto 24px;
   }
 
   .box-left h1 {
@@ -221,7 +222,7 @@ body {
   }
 
   .box-right {
-    margin-inline-start: 5px; 
+    margin-inline-start: 0;
   }
 }
 
