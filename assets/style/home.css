@@ -221,7 +221,7 @@ body {
   }
 
   .box-right {
-    transform: translateX(10px); 
+    transform: translateX(20px); 
   }
 }
 
