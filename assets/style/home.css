@@ -102,7 +102,6 @@ body {
 
 .project-box-left {
   text-align: center;
-  padding: 0 16px;
 }
 
 .project-box-left .project-img {
@@ -178,8 +177,7 @@ body {
   }
 
   .box-left, .box-right {
-    max-width: 95%;
-    margin: 0 auto 24px;
+    max-width: 90%;
   }
 
   .box-left h1 {
@@ -195,34 +193,11 @@ body {
   }
 
   .click-btn {
-    width: 80%;
-    max-width: 240px;
-    margin: 0 auto;
-    display: block;
+    width: 150px;
   }
 
   .hero-image {
     max-width: 240px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 12px;
-  }
-
-  .project-box-left {
-    padding: 0 16px;
-  }
-
-  .project-box-left .project-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 12px;
-  }
-
-  .box-right {
-    margin-inline-start: 0;
   }
 }
 
