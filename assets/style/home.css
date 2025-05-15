@@ -221,7 +221,7 @@ body {
   }
 
   .box-right {
-    transform: translateX(30px); 
+    margin-inline-start: 5px; 
   }
 }
 
